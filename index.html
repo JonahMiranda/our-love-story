@@ -42,14 +42,15 @@
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 1.5rem;
     }
-    <img src="Bday Kiss.JPG" alt="Bday Kiss"{
+    .photo {
       position: relative;
       overflow: hidden;
       border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     }
-    .photo {
+    .photo img {
       width: 100%;
+      height: auto;
       display: block;
       transition: transform 0.3s ease;
     }
@@ -100,8 +101,8 @@
     <h2>Wedding Day</h2>
     <div class="photo-grid">
       <div class="photo">
-        <img src="wedding1.jpg" alt="Wedding Photo 1" />
-        <div class="caption">Walking down the aisle</div>
+        <img src="img/Bday Kiss.JPG" alt="Birthday Kiss Photo" />
+        <div class="caption">The birthday kiss</div>
       </div>
       <div class="photo">
         <img src="wedding2.jpg" alt="Wedding Photo 2" />
@@ -152,4 +153,3 @@
   </script>
 </body>
 </html>
-
