@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Love Story</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Lora', serif;
+      background: #fdfaf6;
+      color: #333;
+    }
+    header {
+      text-align: center;
+      padding: 2rem;
+      background: #fff0f0;
+      border-bottom: 1px solid #e0dede;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0.5rem 0;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin: 1rem 0;
+    }
+    nav a {
+      text-decoration: none;
+      color: #aa4a44;
+      font-weight: bold;
+    }
+    section {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .photo-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    .photo {
+      position: relative;
+      overflow: hidden;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .photo img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: transform 0.3s ease;
+    }
+    .photo:hover img {
+      transform: scale(1.05);
+    }
+    .caption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0,0,0,0.6);
+      color: white;
+      padding: 0.5rem;
+      text-align: center;
+      font-size: 0.9rem;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+    .photo:hover .caption {
+      opacity: 1;
+    }
+    .quote {
+      font-style: italic;
+      text-align: center;
+      margin: 2rem 0;
+      color: #555;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Our Love Story</h1>
+    <nav>
+      <a href="#wedding">Wedding</a>
+      <a href="#travels">Travels</a>
+      <a href="#milestones">Milestones</a>
+    </nav>
+  </header>
+
+  <section id="Love">
+    <h2>My love</h2>
+    <div class="photo-grid">
+      <div class="photo">
+        <img src="img/Bday Kiss.JPG" alt="Birthday Kiss Photo" />
+        <div class="caption">The birthday kiss</div>
+      </div>
+      <div class="photo">
+        <img src="img/first-trip.JPG" alt="First trip to Florida" />
+        <div class="caption">Our first flight</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="travels">
+    <h2>Adventures Together</h2>
+    <div class="photo-grid">
+      <div class="photo">
+        <img src="travel1.jpg" alt="Travel Photo 1" />
+        <div class="caption">Sunset in Santorini</div>
+      </div>
+      <div class="photo">
+        <img src="travel2.jpg" alt="Travel Photo 2" />
+        <div class="caption">Exploring Tokyo streets</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="milestones">
+    <h2>Milestones</h2>
+    <p class="quote">"Love is not about how many days, months, or years you've been together. Love is about how much you love each other every single day."</p>
+    <ul>
+      <li>First date – Jan 2018</li>
+      <li>Proposal – Oct 2021</li>
+      <li>Wedding – June 2023</li>
+      <li>First home – Dec 2023</li>
+    </ul>
+  </section>
+
+  <footer>
+    © 2025 Our Love Story — Designed with love.
+  </footer>
+
+  <script>
+    // Smooth scrolling for nav links
+    document.querySelectorAll('nav a').forEach(link => {
+      link.addEventListener('click', e => {
+        e.preventDefault();
+        document.querySelector(link.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
+
+
+
+
+
+
